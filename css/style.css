@@ -87,6 +87,7 @@ section{
     background: url(https://i.postimg.cc/056PnQ4C/home-bacground-3.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 1;
 }
 .home-imghover{
     position: absolute;
@@ -97,6 +98,7 @@ section{
     background: var(--bg-color);
     transition: 3s;
     opacity: .9;
+    z-index: 2;
 }
 /* .home-imghover:hover {
     background: var(--bg-color);
@@ -104,6 +106,7 @@ section{
 } */
 .home-content{
     max-width: 60rem;
+    z-index: 3;
 }
 .home-content h1{
     position: relative;
@@ -739,6 +742,10 @@ section:nth-child(odd) .animate.scroll,
     .footer{
         padding: 2rem 4%;
     }
+    
+    .home-content p {
+        width: 75%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -797,6 +804,10 @@ section:nth-child(odd) .animate.scroll,
     .contact form{
         width: 80%;
     }
+    
+    .home-content p {
+        width: 50%;
+    }
 }
 
 @media (max-widht: 520px) {
@@ -816,6 +827,12 @@ section:nth-child(odd) .animate.scroll,
     }
     .contact form{
         width: 90%;
+    }
+    .home {
+        background-position: -242px 0px;
+    }
+    .home-content p {
+        width: 50%;
     }
 }
 @media (max-widht: 462px) {
